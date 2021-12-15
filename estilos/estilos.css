@@ -464,21 +464,24 @@ footer{
 .iconos{
     display: flex;
     margin: auto;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
-
     align-items: center;
-
 }
-.iconos .telefono p{
+
+.contenedor_footer{
+    padding: 20px 0 20px 0;
+}
+
+
+
+.iconos .telefono a{
     color: #29505c;
     font-size: 20px;
+    text-decoration: none;
     
 }
 
-.iconos .facebook{
-    margin-right: 20px;
-}
 
 
 
@@ -488,6 +491,7 @@ footer .texto_footer{
     color: #e2921d;
     background:#29505c ;
     text-align: center;
+    padding: 5px 0 5px 0;
 }
 
 /* wp */
@@ -621,7 +625,10 @@ footer .texto_footer{
 
 
 
+
 }
+
+
 
 
 @media screen and (max-width: 500px){
