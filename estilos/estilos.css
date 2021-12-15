@@ -472,7 +472,7 @@ footer .texto_footer{
 
 
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 800px){
     .nav2{
         color:#fff
     }
@@ -621,6 +621,10 @@ footer .texto_footer{
     width: 100%;
     cursor: pointer;
 
+}
+
+.mapa iframe{
+    width: 80%;
 }
     
 }
