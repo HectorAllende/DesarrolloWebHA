@@ -1,11 +1,11 @@
 :root{
-    --color1: rgb(219,144,.5);
+    --color1: #e2921d;
     --color2: rgba(23, 180, 83, 0.877);
     --color3: rgba(11,194,211, 0.623);
     --fondo: #f2f2f2;
     --titulos: 33px;
     --subtitulos:16px;
-    --margenes: 60px;
+    --margenes: 30px;
     --espacios: 10px;
     --espacios-contenido:45px;
     --sombra: 0 0 10px rgba(0,0,0,.5);
@@ -46,51 +46,7 @@ img{
     align-items: center;
 }
 
-
-
-  .lds-facebook {
-    display: inline-block;
-    position: relative;
-    width: 64px;
-    height: 64px;
-  }
-  
-  .lds-facebook div {
-    display: inline-block;
-    position: absolute;
-    left: 6px;
-    width: 13px;
-    background: #cef;
-    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
-  }
-  
-  .lds-facebook div:nth-child(1) {
-    left: 6px;
-    animation-delay: -0.24s;
-  }
-  
-  .lds-facebook div:nth-child(2) {
-    left: 26px;
-    animation-delay: -0.12s;
-  }
-  
-  .lds-facebook div:nth-child(3) {
-    left: 45px;
-    animation-delay: 0;
-  }
-  
-  @keyframes lds-facebook {
-    0% {
-      top: 6px;
-      height: 51px;
-    }
-  
-    50%,
-    100% {
-      top: 19px;
-      height: 26px;
-    }
-  }
+ 
 
   /* Header */
 
@@ -101,7 +57,7 @@ img{
       rgba(211,135,20, .6),
       rgba(29,241,171, .6),
       rgba(7,109,150, .45)
-      ), url(../img/fondo1.jpg);
+      ), url(../img/home1.jpg);
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
@@ -111,7 +67,8 @@ img{
   nav{
     width: 100%;
     position: fixed;   
-    box-shadow: 0 0 10px rgba(0,0,0,.5);      
+    box-shadow: 0 0 10px rgba(0,0,0,.5); 
+    z-index: 100;     
 
   }
 
@@ -156,9 +113,8 @@ img{
   }
 
   .logo img{
-      height: 160px;
-      cursor: pointer;
-  
+      height: 70px;
+      cursor: pointer; 
 
   }
 
@@ -181,7 +137,7 @@ img{
   }
 
   .textos>h1{
-      font-size: 80px;      
+      font-size: 60px;      
   }
 
   .textos>h2{
@@ -191,6 +147,111 @@ img{
 
 
   /* Main */
+
+
+  .questions{
+
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.questions>img{
+    width: 350px;
+}
+
+.textos-questions{
+    margin: 0 0 0 30px;
+}
+
+.textos-questions>img{
+    width: 20px;
+    height: 20px;
+}
+
+.questions p{
+    font-weight: 100;
+    margin-top: 14px;
+    color: #29505c;
+}
+
+.questions h1{
+    
+    margin-top: 14px;
+    font-size: 30px;
+    color: #29505c;
+}
+
+.circulo{
+    background-image: url(../img/circulo.svg);
+    background-size: 10%;
+    background-position: 0% -20%;
+    background-repeat: no-repeat;
+}
+
+.circulo_fotos{
+    background-image: url(../img/puntos.svg);
+    background-size: 20%;
+    background-position: 90% 100%;
+    background-repeat: no-repeat;
+}
+
+
+
+/* Ubicacion */
+
+
+.ubicacion{
+
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2c3e50;
+  
+   
+}
+
+.ubicacion>img{
+    width: 500px;
+}
+
+.textos-ubicacion{
+    margin: 0 0 0 30px;
+}
+
+.textos-ubicacion>img{
+    width: 20px;
+    height: 20px;
+}
+
+.ubicacion p{
+    font-weight: 100;
+    margin-top: 14px;
+    color: #5d6678;
+}
+
+.ubicacion .titulo{
+ 
+    color: #fff;
+    font-size: 30px;
+}
+
+.ubicacion i{
+    margin-right: 10px;
+}
+
+
+.puntos{
+    background-image: url(../img/puntos.svg);
+    background-size: 50%;
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+}
+
+
 
 .contenedor{
   margin: auto;
@@ -219,44 +280,16 @@ img{
     margin: auto;
     margin-top: var(--espacios);
     width: 100px;
-    height: 2px;
+    height: 4px;
     background: var(--color1);
     margin-bottom: var(--espacios-contenido);
 
 }
 
-.card{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
 
-.content-card{
-    width:31%;
-    height: 400px;
-    box-shadow: var(--sombra);
-    overflow: hidden;    
-}
-
-.people{
-    height: 80%;
-}
-
-.content-card img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.texto-team{
-    height: 20%;
-    width: 100%;
-    padding: var(--espacios) 0;
-
-}
 
 .about{
-    background: url(../img/teclado.jpg);
+    background: #2c3e50;  /* fallback for old browsers */
     height: auto;
 }
 
@@ -282,95 +315,133 @@ img{
     text-align: center;
 }
 
+/* nosotros */
 
-/* Botones */
-
-.botones-work{
-    overflow: hidden;
-}
-
-.botones-work li{
+.articulo>i{
+    font-size: 30px;
+    color: #fff;
+    background: #6cb2b6;
     display: inline-block;
+    width: 70px;
+    height: 70px;
     text-align: center;
-    margin-left: var(--espacios);
-    margin-bottom: var(--espacios-contenido);
-    padding: 6px 12px;
-    border: 1px solid var(--color1);
-    list-style: none;
-    color: var(--color1);
-
+    padding-top: 20px;
+    border-radius: 50%;
+    box-shadow: 0 8px 32px rgba(31, 122, 130, .46);
 }
 
-.botones-work li:hover{
-   background: var(--color1);
-   color: #FFF;
-   cursor: pointer;
-
-}
-
-.botones-work .active{
-    background: var(--color1);
+.articulo>p{
+    font-weight: 100;
     color: #FFF;
+    margin-top: 15px;
+    padding-bottom: 20px;
 }
 
-.galeria-work{
+
+/* Galeria */
+
+.gallery{
+    background: #f2f2f2;
+}
+
+.contenedor-galeria{
     display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    justify-content: space-around;
 }
 
-.galeria-work .cont-work{
-    width: 31%;
-    height: 300px;
-    box-shadow: var(--sombra);
-    overflow: hidden;
-    margin-bottom: var(--espacios-contenido);
-}
-
-
-.img-work{
-    height: 90%;
-    width: 100%;
-}
-
-.img-work img{
-    height: 100%;
-    width: 100%;
+.img-galeria{
     object-fit: cover;
+    width: 30%;
+    height: 300px;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    cursor: pointer;
 }
 
-.textos-work{
+.imagen-light{
+    position: fixed;
+    background: rgba(0, 0, 0, .6);
+    width: 100%;
     height: 100%;
-}
-.textos-work>h4{
-    line-height:30px ;
-    font-weight: 300;
-}
-
-footer{
-    background: url(../img/teclado.jpg);
-}
-
-.marca-logo{
-    width: 40%;
-    margin: auto;
-    margin-bottom: var(--espacios);
-}
-
-
-.marca-logo img{
-    width: 100%;
-}
-
-.iconos{
+    top: 0;
+    left: 0;
     display: flex;
-    margin: auto;
-    justify-content: space-around;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+    z-index: 101;
+}
+
+.show{
+    transform: translate(0);
+    /* vuelve a aparecer */
+}
+
+.agregar-imagen{
+    width: 60%;
+    border-radius: 10px;
+    transform: scale(0);  /* oculta la imgagen */  
+    transition: transform .3s .2s;
+}
+
+.showImage{
+    transform: scale(0.5)
+    /* vuelve aparecer */
+}
+
+.close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
     cursor: pointer;
 }
 
 
+/* Footer */
+
+footer{
+    background: #e2921d;
+}
+
+
+
+
+
+
+.iconos{
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    width: 100%;
+
+    align-items: center;
+
+}
+.iconos .telefono p{
+    color: #29505c;
+    font-size: 20px;
+    
+}
+
+.iconos .facebook{
+    margin-right: 20px;
+}
+
+
+
+
+
+footer .texto_footer{
+    color: #e2921d;
+    background:#29505c ;
+    text-align: center;
+}
+
+/* wp */
 
 .fab{
     font-size: 40px;
@@ -379,9 +450,25 @@ footer{
     display: inline-block;
 }
 
-footer p{
-    margin-top: var(--espacios);
+.btn-wsp{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 60px;
+    bottom: 50px;
+    right: 20px;
+    background: #0df053;
+
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    
 }
+
+
+
 
 
 
@@ -397,6 +484,7 @@ footer p{
 
     .enlaces{
         position: fixed;/* rompe el eje de flexbox */
+        padding-top: 10px;
         top:80px;
         background:#2c3e50;
         left: 0;
@@ -413,7 +501,7 @@ footer p{
         height: 50px;
         padding: 20px;
         text-align: center;
-        background: #34495e;
+        background: #2c3e50;
         color: #fff;
     }
 
@@ -433,7 +521,40 @@ footer p{
         --margenes: 30px 
     }
 
+    .agregar-imagen{
+        width: 80%;
+    }
 
+    .img-galeria{
+        width: 45%;
+    }
+
+    .showImage{
+        transform: scale(0.8)
+        /* vuelve aparecer */
+    }
+    
+    /* QUestion */
+
+    .questions{
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 720px;
+    }
+
+    .questions>img{
+        width: 400px;
+    }
+
+    .ubicacion{
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 720px;
+    }
+
+    .ubicacion>img{
+        width: 400px;
+    }
 
 
 
@@ -463,6 +584,30 @@ footer p{
     .iconos{
         margin:auto
     }
+    .img-galeria{
+        width: 250px;
+        height:250px;
+    }
+
+    .showImage{
+        transform: scale(0.9)
+        /* vuelve aparecer */
+    }
+
+    .questions>img{
+        width: 200px;
+    }
+
+    
+.iconos{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    width: 100%;
+    cursor: pointer;
+
+}
     
 }
 

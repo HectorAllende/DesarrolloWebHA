@@ -1,3 +1,5 @@
+AOS.init();
+
 //Variables
 
 let nav = document.getElementById('nav')
@@ -5,7 +7,10 @@ let menu = document.getElementById('enlaces')
 let abrir = document.getElementById('open')
 let botones = document.querySelector('btn-header')
 let logo = document.querySelector('.logos')
+
 let cerrado = true
+
+
 
 function menus(){
 
@@ -14,7 +19,7 @@ function menus(){
     if(desplazamientoActual<= 300){
         nav.classList.remove('nav2')
         nav.classList.add('nav1')
-        logo.src = 'img/logo_transparent.png'
+
         nav.style.transition= '1s'
         menu.style.top ='80px'
         abrir.style.color = "#FFF"       
@@ -23,7 +28,7 @@ function menus(){
         nav.classList.remove('nav1')
         nav.classList.add('nav2')
         nav.style.transition= '1s'
-        logo.src = 'img/logo_transparent_1.png'
+
         menu.style.top ='100px'
         abrir.style.color = "#000"
     }
@@ -53,7 +58,7 @@ window.addEventListener('load', function(){
 
 })
 window.addEventListener('scroll', function(){
-    console.log(window.pageYOffset)
+    // console.log(window.pageYOffset)
     menus()
 })
 
@@ -86,6 +91,39 @@ window.addEventListener('click', function(e){
 abrir.addEventListener('click', function(){
     apertura()
 })
+
+
+
+
+// galeria
+
+
+const imagenes = document.querySelectorAll('.img-galeria')
+const imagenesLight = document.querySelector('.agregar-imagen')
+const contenedorLight = document.querySelector('.imagen-light')
+const hamburger1 = document.querySelector('.hamburger')
+
+imagenes.forEach(imagen=>{
+    imagen.addEventListener('click',()=>{
+        aparecerImagen(imagen.getAttribute('src')) 
+    })
+})
+
+contenedorLight.addEventListener('click', (e)=>{
+    if(e.target !== imagenesLight){
+        contenedorLight.classList.toggle('show')
+        imagenesLight.classList.toggle('showImage')
+        hamburger1.style.opacity = '1'
+    }
+})
+
+const aparecerImagen = (imagen)=>{
+    imagenesLight.src = imagen
+    contenedorLight.classList.toggle('show')
+    imagenesLight.classList.toggle('showImage')
+    hamburger1.style.opacity = '0'
+}
+
 
 
 
