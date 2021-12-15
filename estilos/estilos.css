@@ -682,8 +682,9 @@ footer .texto_footer{
 }
 
 .textos>h2{
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 300;
+    margin: 0 3px 0 3px;
 }
     
 }
