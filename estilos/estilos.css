@@ -19,7 +19,7 @@
 }
 
 body{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'open Sans', sans-serif;
     background: var(--fondo);
 }
 
@@ -102,15 +102,16 @@ img{
  
     height: 100vh;
     background: linear-gradient(to bottom,
-      rgba(211,135,20, .6),
-      rgba(29,241,171, .6),
-      rgba(7,109,150, .45)
+    rgba(211,135,20, .6),
+    rgba(29,241,171, .6),
+    rgba(7,109,150, .45)
       ), url(../img/home1.jpg);
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;        
   }
+
 
   nav{
     width: 100%;
@@ -161,9 +162,9 @@ img{
   }
 
   .logo img{
-      height: 70px;
+      height: 60px;
       cursor: pointer; 
-      filter: grayscale(1);
+      filter: opacity(50%);
 
   }
 
@@ -186,14 +187,26 @@ img{
   }
 
   .textos>h1{
-      font-size: 60px;      
+      font-size: 45px;      
   }
+
+  .textos h1 strong{
+      font-size: 50px; 
+      color:#29505c;
+  }
+
+
 
   .textos>h2{
       font-size: 30px;
       font-weight: 300;
   }
 
+  .textos img{
+      width: 25%;
+      height: 25%;
+      filter: opacity(50%);
+  }
 
   /* Main */
 
@@ -207,13 +220,21 @@ img{
    
 }
 
+
 .questions>img{
     width: 350px;
 }
 
+
 .textos-questions{
     margin: 0 0 0 30px;
+    width: 50%;
+
+    padding: 0 30px 0 30px;
 }
+
+
+
 
 .textos-questions>img{
     width: 20px;
@@ -236,7 +257,7 @@ img{
 .circulo{
     background-image: url(../img/circulo.svg);
     background-size: 10%;
-    background-position: 0% -20%;
+    background-position: 0% -10%;
     background-repeat: no-repeat;
 }
 
@@ -247,6 +268,102 @@ img{
     background-repeat: no-repeat;
 }
 
+
+/* Instalaciones */
+
+.instalaciones{
+
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+
+.instalaciones>img{
+    width: 350px;
+}
+
+
+.textos-instalaciones{
+    margin: 0 0 0 30px;
+    width: 50%;
+
+    padding: 0 30px 0 30px;
+}
+
+
+
+
+.textos-instalaciones>img{
+    width: 20px;
+    height: 20px;
+}
+
+.instalaciones p{
+    font-weight: 100;
+    margin-top: 14px;
+    color: #29505c;
+}
+
+.instalaciones h1{
+    
+    margin-top: 14px;
+    font-size: 30px;
+    color: #29505c;
+}
+
+/* Responsabilidad */
+
+.responsabilidad{
+
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.responsabilidad>img{
+    width: 350px;
+}
+
+
+.textos-responsabilidad{
+    margin: 0 0 0 30px;
+    width: 50%;
+
+    padding: 0 30px 0 30px;
+}
+
+
+
+
+.textos-responsabilidad>img{
+    width: 20px;
+    height: 20px;
+}
+
+.responsabilidad p{
+    font-weight: 100;
+    margin-top: 14px;
+    color: #29505c;
+}
+
+.responsabilidad p a{
+    text-decoration: none;
+    color: #2c3e50;
+}
+
+
+
+.responsabilidad h1{
+    
+    margin-top: 14px;
+    font-size: 30px;
+    color: #29505c;
+}
 
 
 /* Ubicacion */
@@ -323,6 +440,8 @@ img{
     color: var(--color1);
 }
 
+/* subrayado */
+
 .after::after{
     content: '';
     display: block;
@@ -335,7 +454,7 @@ img{
 
 }
 
-
+/* Nostros habitaciones */
 
 .about{
     background: #2c3e50;  /* fallback for old browsers */
@@ -345,16 +464,23 @@ img{
 .servicios{
     display: flex;
     color: #fff;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: auto;
     flex-wrap: wrap;
 }
 
 .caja-servicios{
     width: 30%;
-    margin: auto;
+
     text-align: center;
-  }
+}
+
+.about h4{
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 35px;
+}
+
 
 .caja-servicios>h4{
     margin-bottom: var(--espacios);
@@ -390,7 +516,8 @@ img{
 /* Galeria */
 
 .gallery{
-    background: #f2f2f2;
+    background: #2c3e50;
+
 }
 
 .contenedor-galeria{
@@ -468,6 +595,18 @@ footer{
     width: 100%;
     align-items: center;
 }
+/*  */
+
+.redes{
+    display: flex;
+
+    
+}
+.facebook{
+    margin-right: 20px;
+}
+
+/*  */
 
 .contenedor_footer{
     padding: 20px 0 20px 0;
@@ -525,6 +664,7 @@ footer .texto_footer{
 
 
 
+
 @media screen and (max-width: 800px){
     .nav2{
         color:#fff
@@ -558,12 +698,24 @@ footer .texto_footer{
         color: #fff;
     }
 
+
+
     .textos>h1{
-        font-size: 65px;
+        font-size: 35px;      
     }
+  
+    .textos h1 strong{
+        font-size: 45px; 
+        color:#29505c;
+    }
+  
+  
+  
     .textos>h2{
-        font-size: 30px;
+        font-size: 25px;
+        font-weight: 300;
     }
+ 
 
     .content-card{
         width: 40%;
@@ -596,8 +748,50 @@ footer .texto_footer{
     }
 
     .questions>img{
-        width: 400px;
+        width: 300px;
     }
+
+    /* Instalaciones */
+
+    .instalaciones{
+        flex-direction: column;
+        margin-top: 10px;
+        justify-content: center;
+        height: 100vh;
+    }
+
+
+    .instalaciones>img{
+        width:180px;
+    }
+    .textos-instalaciones{
+      margin: 0 0 0 0px;
+      width: 70%;
+
+      padding: 0 0px 0 0px;
+    }
+
+    /* responsabilidad */
+    .responsabilidad{
+        flex-direction: column;
+        margin-top: 10px;
+        justify-content: center;
+        height: 100vh;
+    }
+
+
+    .responsabilidad>img{
+        width:170px;
+    }
+    .textos-responsabilidad{
+      margin: 0 0 0 0px;
+      width: 95%;
+
+      padding: 0 0px 15px 0px;
+    }
+
+    /* Ubicacion */
+
 
     .ubicacion{
         flex-direction: column;
@@ -668,6 +862,17 @@ footer .texto_footer{
         width: 200px;
     }
 
+    .instalaciones>img{
+        width: 140px;
+    }
+
+    .responsabilidad>img{
+      
+        width: 120px;
+    }
+
+
+
     
 .iconos{
     display: flex;
@@ -684,14 +889,29 @@ footer .texto_footer{
 }
 
 
-.textos>h1{
-    font-size: 40px;      
+
+
+
+   .textos>h1{
+    font-size: 30px;      
 }
 
+.textos h1 strong{
+    font-size: 40px; 
+    color:#29505c;
+}
+
+
+
 .textos>h2{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 300;
     margin: 0 3px 0 3px;
+}
+.textos img{
+    width: 35%;
+    height: 35%;
+    filter: opacity(50%);
 }
     
 }

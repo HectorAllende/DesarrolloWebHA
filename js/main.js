@@ -16,7 +16,7 @@ function menus(){
 
     let desplazamientoActual = window.pageYOffset
 
-    if(desplazamientoActual<= 300){
+    if(desplazamientoActual<= 50){
         nav.classList.remove('nav2')
         nav.classList.add('nav1')
 

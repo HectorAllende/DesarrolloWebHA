@@ -3,15 +3,17 @@ $(function () {
     // ir a las distintas secciones
 
     let mision = $('#mision').offset().top,
-        nosotros = $('#nosotros').offset().top,
-        galeria = $('#galeria').offset().top,
+        habitaciones = $('#habitaciones').offset().top,
+        instalaciones = $('#instalaciones').offset().top,
+        responsabilidad = $('#responsabilidad').offset().top,
         ubicacion = $('#ubicacion').offset().top;
         contacto = $('#contacto').offset().top;
 
     window.addEventListener('resize', function(){
         let mision = $('#mision').offset().top,
-        nosotros = $('#nosotros').offset().top,
-        galeria = $('#galeria').offset().top,
+        habitaciones = $('#habitaciones').offset().top,
+        instalaciones = $('#instalaciones').offset().top,
+        responsabilidad = $('#responsabilidad').offset().top,
         ubicacion = $('#ubicacion').offset().top;
         contacto = $('#contacto').offset().top;
     });
@@ -31,17 +33,23 @@ $(function () {
         },600);
     });
 
-    $('#enlace-nosotros').on('click', function(e){
+    $('#enlace-habitaciones').on('click', function(e){
         e.preventDefault();
         $('html, body').animate({
-            scrollTop: nosotros -100
+            scrollTop: habitaciones -100
         },600);
     });
 
-    $('#enlace-galeria').on('click', function(e){
+    $('#enlace-instalaciones').on('click', function(e){
         e.preventDefault();
         $('html, body').animate({
-            scrollTop: galeria -100
+            scrollTop: instalaciones -100
+        },600);
+    });
+    $('#enlace-responsabilidad').on('click', function(e){
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: responsabilidad -100
         },600);
     });
 
